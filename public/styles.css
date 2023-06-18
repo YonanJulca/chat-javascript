@@ -1,0 +1,62 @@
+/* Custom styles for the chat interface */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  #contenidoProtegido {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+  }
+  
+  #formulario {
+    padding-top: 20px;
+  }
+  
+  #formulario input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  #formulario button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Styling for chat messages */
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message .sender {
+    font-weight: bold;
+  }
+  
+  .message .timestamp {
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+  .message .content {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+  }
+  
