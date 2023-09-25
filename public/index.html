@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Required meta tags -->
+    <!-- Meta etiquetas requeridas -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -12,12 +12,16 @@
       integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq"
       crossorigin="anonymous"
     />
-    <!-- CSS -->
 
+    <!-- Tu archivo CSS personalizado -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+    <!-- Configuración de Firebase -->
     <script>
       const firebaseConfig = {
         apiKey: "AIzaSyB9p-WyAabHzKEmb9ar1TTHwBlau40lB-M",
@@ -29,19 +33,24 @@
         appId: "1:859810766408:web:8bc29658c794c83d14827d",
       };
 
-      // Initialize Firebase
+      // Inicializar Firebase
       firebase.initializeApp(firebaseConfig);
     </script>
-    <title>chat</title>
+
+    <title>Chat</title>
   </head>
   <body>
     <div class="container">
+      <!-- Barra de navegación -->
       <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand" id="nombreUsuario">Chat</span>
         <div id="botones"></div>
       </nav>
-      <main id="contenidoProtegido" class="mt-3" sytle="height: 80vh; overflow-y: scroll;"></main>
 
+      <!-- Contenido principal del chat -->
+      <main id="contenidoProtegido" class="mt-3" style="height: 80vh; overflow-y: scroll;"></main>
+
+      <!-- Formulario de envío de mensajes -->
       <form class="input-group mb-3 fixed-bottom container" id="formulario">
         <input
           type="text"
@@ -55,6 +64,7 @@
       </form>
     </div>
 
+    <!-- Tu archivo de JavaScript -->
     <script src="app.js"></script>
   </body>
 </html>
