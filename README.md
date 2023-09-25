@@ -9,9 +9,6 @@ Funcionalidades
 
     Diseño receptivo: La aplicación está diseñada para adaptarse a diferentes tamaños de pantalla, desde dispositivos móviles hasta computadoras de escritorio.
 
-Requisitos
-
-    Navegador web moderno con soporte para JavaScript.
 
 Tecnologías Utilizadas
 
